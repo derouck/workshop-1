@@ -1,6 +1,7 @@
 import React from 'react'
 import AviatizeTable from '../antd/AviatizeTable'
 import buttonColumn from '../columns/buttonColumn'
+import emailColumn from '../columns/emailColumn'
 import slowColumn from '../columns/slowColumn'
 import textColumn from '../columns/textColumn'
 
@@ -18,7 +19,7 @@ const UserTable = ({ data, onView }) => {
       name: 'last_name',
       label: 'Last Name',
     }),
-    textColumn({
+    emailColumn({
       name: 'email',
       label: 'Email',
     }),
